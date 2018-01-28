@@ -1,4 +1,4 @@
-package br.com.cursojava.projetofinal.ui;
+package br.com.cursojava.projetofinal.controller;
 
 import java.io.IOException;
 
@@ -22,7 +22,7 @@ public class JanelaPrincipalController {
 
 	@FXML
     void cadastroCargoOnAction(ActionEvent event) throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/resource/CadastroCargo.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/CadastroCargo.fxml"));
 		Parent parent = loader.load();
 		pnlRaiz.setCenter(parent);
 		stage.setTitle("Projeto Final - Cadastro de Cargos");
@@ -30,7 +30,7 @@ public class JanelaPrincipalController {
 
     @FXML
     void cadastroFuncionarioOnAction(ActionEvent event) throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/resource/CadastroFuncionario.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/CadastroFuncionario.fxml"));
 		Parent parent = loader.load();
 		pnlRaiz.setCenter(parent);
 		stage.setTitle("Projeto Final - Cadastro de Funcionarios");
@@ -38,7 +38,7 @@ public class JanelaPrincipalController {
 
     @FXML
     void pesquisaCargoOnAction(ActionEvent event) throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/resource/PesquisaCargo.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/PesquisaCargo.fxml"));
 		Parent parent = loader.load();
 		pnlRaiz.setCenter(parent);
 		stage.setTitle("Projeto Final - Pesquisa de Cargos");
@@ -46,7 +46,7 @@ public class JanelaPrincipalController {
 
     @FXML
     void pesquisaFuncionarioOnAction(ActionEvent event) throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/resource/PesquisaFuncionario.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/PesquisaFuncionario.fxml"));
 		Parent parent = loader.load();
 		pnlRaiz.setCenter(parent);
 		stage.setTitle("Projeto Final - Pesquisa de Funcionários");
@@ -54,7 +54,7 @@ public class JanelaPrincipalController {
 
     @FXML
     void extensoOnAction(ActionEvent event) throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/resource/NumeroExtenso.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/NumeroExtenso.fxml"));
 		Parent parent = loader.load();
 		pnlRaiz.setCenter(parent);
 		stage.setTitle("Projeto Final - Número por Extenso");

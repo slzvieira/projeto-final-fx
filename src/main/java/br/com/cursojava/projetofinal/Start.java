@@ -1,6 +1,6 @@
 package br.com.cursojava.projetofinal;
 
-import br.com.cursojava.projetofinal.ui.JanelaPrincipalController;
+import br.com.cursojava.projetofinal.controller.JanelaPrincipalController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,13 +17,13 @@ public class Start extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/resource/JanelaPrincipal.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/JanelaPrincipal.fxml"));
 		Parent parent = loader.load();
 		JanelaPrincipalController controller = loader.getController();
 		controller.setStage(stage);
 
 		stage.setScene(new Scene(parent));
-		stage.getIcons().add(new Image(getClass().getResourceAsStream("/resource/image/funcionario-icon.png")));
+		stage.getIcons().add(new Image(getClass().getResourceAsStream("/view/image/funcionario-icon.png")));
 		stage.setTitle("Projeto Final");
 		stage.setWidth(600);
 		stage.setHeight(400);
